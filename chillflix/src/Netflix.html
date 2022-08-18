@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://brand.netflix.com/en/assets/ -->
+<html class="no-js" lang="" data-react-helmet="lang"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Netflix | Brand Assets</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#e50914">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="https://brand.netflix.com/static/assets/site-icons/favicon.ico">
+    <link rel="manifest" href="https://brand.netflix.com/static/manifest.json">
+    <style>
+      #splash-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transform: translate3d(0, 0, 0);
+        z-index: 999;
+      }
+
+      .splash-fade-out #splash-container {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s opacity, 0.01s visibility 0.58s;
+      }
+
+      #splash-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        max-width: 90%;
+        height: 150px;
+        transform: translate(-50%, -50%);
+      }
+
+      #splash-logo {
+        max-width: 100%;
+      }
+
+      #splash-loader {
+        margin: 15px auto 0;
+        display: block;
+        animation-name: loader-spinning;
+        animation-duration: 0.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes loader-spinning {
+        0%   {
+          transform: rotate(0deg);
+        }
+        50%   {
+          transform: rotate(180deg);
+        }
+        100%   {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  <link href="./Netflix_files/main.01743fc53d559e09bf95dc1e11d56d0f.css" rel="stylesheet"><style type="text/css">/**
+ * React Select
+ * ============
+ * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
+ * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
+ * MIT License: https://github.com/JedWatson/react-select
+*/
+.Select {
+  position: relative;
+}
+.Select input::-webkit-contacts-auto-fill-button,
+.Select input::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+.Select input::-ms-clear {
+  display: none !important;
+}
+.Select input::-ms-reveal {
+  display: none !important;
+}
+.Select,
+.Select div,
+.Select input,
+.Select span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Select.is-disabled .Select-arrow-zone {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.35;
+}
+.Select.is-disabled > .Select-control {
+  background-color: #f9f9f9;
+}
+.Select.is-disabled > .Select-control:hover {
+  box-shadow: none;
+}
+.Select.is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #fff;
+  border-color: #b3b3b3 #ccc #d9d9d9;
+}
+.Select.is-open > .Select-control .Select-arrow {
+  top: -2px;
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+.Select.is-searchable.is-open > .Select-control {
+  cursor: text;
+}
+.Select.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text;
+}
+.Select.is-focused > .Select-control {
+  background: #fff;
+}
+.Select.is-focused:not(.is-open) > .Select-control {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(0, 126, 255, 0.1);
+  background: #fff;
+}
+.Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
+  padding-right: 42px;
+}
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #333;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label {
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  color: #007eff;
+  outline: none;
+  text-decoration: underline;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  background: #fff;
+}
+.Select.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select.is-open .Select-arrow,
+.Select .Select-arrow-zone:hover > .Select-arrow {
+  border-top-color: #666;
+}
+.Select.Select--rtl {
+  direction: rtl;
+  text-align: right;
+}
+.Select-control {
+  background-color: #fff;
+  border-color: #d9d9d9 #ccc #b3b3b3;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: default;
+  display: table;
+  border-spacing: 0;
+  border-collapse: separate;
+  height: 36px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.Select-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.Select-control .Select-input:focus {
+  outline: none;
+  background: #fff;
+}
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  bottom: 0;
+  color: #aaa;
+  left: 0;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Select-input {
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.Select-input > input {
+  width: 100%;
+  background: none transparent;
+  border: 0 none;
+  box-shadow: none;
+  cursor: default;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  outline: none;
+  line-height: 17px;
+  /* For IE 8 compatibility */
+  padding: 8px 0 12px;
+  /* For IE 8 compatibility */
+  -webkit-appearance: none;
+}
+.is-focused .Select-input > input {
+  cursor: text;
+}
+.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select-control:not(.is-searchable) > .Select-input {
+  outline: none;
+}
+.Select-loading-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+}
+.Select-loading {
+  -webkit-animation: Select-animation-spin 400ms infinite linear;
+  -o-animation: Select-animation-spin 400ms infinite linear;
+  animation: Select-animation-spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-right-color: #333;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.Select-clear-zone {
+  -webkit-animation: Select-animation-fadeIn 200ms;
+  -o-animation: Select-animation-fadeIn 200ms;
+  animation: Select-animation-fadeIn 200ms;
+  color: #999;
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 17px;
+}
+.Select-clear-zone:hover {
+  color: #D0021B;
+}
+.Select-clear {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+}
+.Select--multi .Select-clear-zone {
+  width: 17px;
+}
+.Select-arrow-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  padding-right: 5px;
+}
+.Select--rtl .Select-arrow-zone {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.Select-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 2.5px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  position: relative;
+}
+.Select-control > *:last-child {
+  padding-right: 5px;
+}
+.Select--multi .Select-multi-value-wrapper {
+  display: inline-block;
+}
+.Select .Select-aria-only {
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  float: left;
+}
+@-webkit-keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Select-menu-outer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #e6e6e6;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto;
+}
+.Select-option {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+}
+.Select-option:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.Select-option.is-selected {
+  background-color: #f5faff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.04);
+  color: #333;
+}
+.Select-option.is-focused {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  color: #333;
+}
+.Select-option.is-disabled {
+  color: #cccccc;
+  cursor: default;
+}
+.Select-noresults {
+  box-sizing: border-box;
+  color: #999999;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+.Select--multi .Select-input {
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 0;
+}
+.Select--multi.Select--rtl .Select-input {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.Select--multi.has-value .Select-input {
+  margin-left: 5px;
+}
+.Select--multi .Select-value {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  border-radius: 2px;
+  border: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border: 1px solid rgba(0, 126, 255, 0.24);
+  color: #007eff;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+.Select--multi .Select-value-icon,
+.Select--multi .Select-value-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Select--multi .Select-value-label {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: default;
+  padding: 2px 5px;
+}
+.Select--multi a.Select-value-label {
+  color: #007eff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select--multi a.Select-value-label:hover {
+  text-decoration: underline;
+}
+.Select--multi .Select-value-icon {
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-right: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-right: 1px solid rgba(0, 126, 255, 0.24);
+  padding: 1px 5px 3px;
+}
+.Select--multi .Select-value-icon:hover,
+.Select--multi .Select-value-icon:focus {
+  background-color: #d8eafd;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 113, 230, 0.08);
+  color: #0071e6;
+}
+.Select--multi .Select-value-icon:active {
+  background-color: #c2e0ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.24);
+}
+.Select--multi.Select--rtl .Select-value {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.Select--multi.Select--rtl .Select-value-icon {
+  border-right: none;
+  border-left: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-left: 1px solid rgba(0, 126, 255, 0.24);
+}
+.Select--multi.is-disabled .Select-value {
+  background-color: #fcfcfc;
+  border: 1px solid #e3e3e3;
+  color: #333;
+}
+.Select--multi.is-disabled .Select-value-icon {
+  cursor: not-allowed;
+  border-right: 1px solid #e3e3e3;
+}
+.Select--multi.is-disabled .Select-value-icon:hover,
+.Select--multi.is-disabled .Select-value-icon:focus,
+.Select--multi.is-disabled .Select-value-icon:active {
+  background-color: #fcfcfc;
+}
+@keyframes Select-animation-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes Select-animation-spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+</style><link rel="stylesheet" href="./Netflix_files/en.css"><script type="text/javascript" async="" src="./Netflix_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-5dRM1m7eE6AZoDz0NjK5VHNVPCC+oM2lfoqs/UmLHmgRBeoZvH2dwAP837BPJXaQ"></script><script id="google-recaptcha-v3" src="./Netflix_files/api.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./Netflix_files/Guide.7aa6146093a23b743b08.js.download"></script><link rel="canonical" href="https://brand.netflix.com/" data-react-helmet="true"><meta name="description" content="The elements of our brand&#39;s visual identity" data-react-helmet="true"></head>
+ 
+  <body class="splash-fade-out"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0;visibility:hidden"><defs><symbol viewBox="0 0 10.25 18" id="arrow"><title>Arrow</title><g id="arrow_Layer_2" data-name="Layer 2"><g id="arrow_Layer_1-2" data-name="Layer 1"><polygon id="arrow_Arrow" points="1.25 0 0 1.25 7.75 9 0 16.75 1.25 18 10.25 9 1.25 0"></polygon></g></g></symbol><symbol viewBox="0 0 28 28" id="Calendar"><title>Asset 6</title><g id="Calendar_Layer_2" data-name="Layer 2"><g id="Calendar_Layer_1-2" data-name="Layer 1"><g id="Calendar_Calendar"><path d="M26,2H24V4h2V26H2V4H4V2H2A2,2,0,0,0,0,4V26a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V4A2,2,0,0,0,26,2Z"></path><rect x="10" y="2" width="8" height="2"></rect><rect x="4" y="8" width="20" height="2"></rect><rect x="6" width="2" height="6"></rect><rect x="20" width="2" height="6"></rect></g></g></g></symbol><symbol viewBox="0 0 18 18" id="close"><title>Close</title><g id="close_Layer_2" data-name="Layer 2"><g id="close_Layer_1-2" data-name="Layer 1"><polygon id="close_Close" points="18 1.25 16.75 0 9 7.75 1.25 0 0 1.25 7.75 9 0 16.75 1.25 18 9 10.25 16.75 18 18 16.75 10.25 9 18 1.25"></polygon></g></g></symbol><symbol viewBox="0 0 24 19" id="do_mark"><title>Do_Mark</title><g id="do_mark_Layer_2" data-name="Layer 2"><g id="do_mark_Layer_1-2" data-name="Layer 1"><polygon id="do_mark_Do_Mark" points="20 0 24 4 9 19 0 10 4 6 9 11 20 0"></polygon></g></g></symbol><symbol viewBox="0 0 24 24" id="dont_mark"><title>Asset 13</title><g id="dont_mark_Layer_2" data-name="Layer 2"><g id="dont_mark_Layer_1-2" data-name="Layer 1"><path id="dont_mark_Dont_Mark" d="M20.49,3.51a12,12,0,1,0,0,17A12,12,0,0,0,20.49,3.51ZM6.34,6.34a8,8,0,0,1,9.72-1.23L5.11,16.06A8,8,0,0,1,6.34,6.34ZM17.66,17.66a8,8,0,0,1-9.72,1.23L18.89,7.94a8,8,0,0,1-1.23,9.72Z"></path></g></g></symbol><symbol viewBox="0 0 12 6" id="dropdown"><title>Dropdown</title><g id="dropdown_Layer_2" data-name="Layer 2"><g id="dropdown_Layer_1-2" data-name="Layer 1"><polygon id="dropdown_Dropdown" points="12 0 6 6 0 0 12 0"></polygon></g></g></symbol><symbol viewBox="0 0 16.71 17.71" id="search"><title>Asset 11</title><g id="search_Layer_2" data-name="Layer 2"><g id="search_Layer_1-2" data-name="Layer 1"><path id="search_Search" d="M16.71,16.29l-4.56-4.56A7,7,0,1,0,10.59,13l4.7,4.7ZM2,7a5,5,0,1,1,5,5A5,5,0,0,1,2,7Z"></path></g></g></symbol><symbol viewBox="0 0 28 28" id="copy"><title>Asset 5</title><g id="copy_Layer_2" data-name="Layer 2"><g id="copy_Layer_1-2" data-name="Layer 1"><g id="copy_Copy"><path d="M20,20V2a2,2,0,0,0-2-2H2A2,2,0,0,0,0,2V20a2,2,0,0,0,2,2H18A2,2,0,0,0,20,20ZM2,2H18V20H2Z"></path><polygon points="11 7 9 7 9 10 6 10 6 12 9 12 9 15 11 15 11 12 14 12 14 10 11 10 11 7"></polygon><path d="M26,6H22V8h3a1,1,0,0,1,1,1V25a1,1,0,0,1-1,1H11a1,1,0,0,1-1-1V24H8v2a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V8A2,2,0,0,0,26,6Z"></path></g></g></g></symbol><symbol viewBox="0 0 18 20" id="dl_arrow"><title>DL_Arrow</title><g id="dl_arrow_Layer_2" data-name="Layer 2"><g id="dl_arrow_Layer_1-2" data-name="Layer 1"><polygon id="dl_arrow_DL_Arrow" points="16.75 9.75 10 16.5 10 0 8 0 8 16.5 1.25 9.75 0 11 9 20 18 11 16.75 9.75"></polygon></g></g></symbol><symbol viewBox="0 0 28 8" id="dl_ui_bracket"><title>DL_UL_Bracket</title><g id="dl_ui_bracket_Layer_2" data-name="Layer 2"><g id="dl_ui_bracket_Layer_1-2" data-name="Layer 1"><path id="dl_ui_bracket_DL_UL_Bracket" d="M26,0V6H2V0H0V7A1,1,0,0,0,1,8H27a1,1,0,0,0,1-1V0Z"></path></g></g></symbol><symbol viewBox="0 0 50.08 49.16" id="loader"><defs><style>.cls-1{fill:#e50914;}</style></defs><title>Loader</title><g id="loader_Layer_2" data-name="Layer 2"><g id="loader_Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M33.92,47.15A24.31,24.31,0,0,1,.05,26.35a24.61,24.61,0,0,1,3.9-15A24.93,24.93,0,0,1,31.83,1,25.32,25.32,0,0,1,50.08,25h0a1.5,1.5,0,0,1-3,0s0,0,0,0a22.54,22.54,0,0,0-4.29-13.53A22.84,22.84,0,0,0,31.19,3.13a23.18,23.18,0,0,0-30,23.16A23.46,23.46,0,0,0,6.4,40.12a23.74,23.74,0,0,0,12.54,8.05A24,24,0,0,0,33.92,47.15Z"></path></g></g></symbol><symbol viewBox="0 0 12 13" id="power"><title>Asset 1</title><g id="power_Layer_2" data-name="Layer 2"><g id="power_Layer_1-2" data-name="Layer 1"><rect x="5" width="2" height="6"></rect><path d="M6,13A6,6,0,0,1,.47,9.34,6,6,0,0,1,.12,8.21a6.06,6.06,0,0,1,0-2.42A6,6,0,0,1,2.65,2L3.76,3.68A4,4,0,0,0,2.31,5.44a4,4,0,0,0-.23.75,4,4,0,0,0,0,1.62,3.92,3.92,0,0,0,.23.75,4,4,0,0,0,.86,1.27,4,4,0,0,0,.59.49,3.94,3.94,0,0,0,1.43.6,4.09,4.09,0,0,0,1.62,0,4,4,0,0,0,1.43-.6A4.13,4.13,0,0,0,9.32,9.24a3.95,3.95,0,0,0,.6-1.43,4.06,4.06,0,0,0,0-1.62,4,4,0,0,0-1.09-2,4.05,4.05,0,0,0-.59-.49L9.36,2A6,6,0,0,1,11,10.35a6,6,0,0,1-3.77,2.52A6,6,0,0,1,6,13Z"></path></g></g></symbol><symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 14" id="login"> <title>Sign_In</title> <g> <path class="st0" d="M6,8c-3.3,0-6,2.7-6,6h12C12,10.7,9.3,8,6,8z"></path> <path class="st0" d="M3.2,4.2c0.1,0.3,0.3,0.5,0.5,0.6l0,0.4C4,6.3,4.9,7.1,6,7c1.1,0.1,2-0.7,2.2-1.7l0-0.4   c0.3-0.1,0.5-0.4,0.6-0.7L9,3.6c0,0,0-0.1,0-0.1C9,3.2,8.8,3,8.5,3H8.4l0.1-0.7c0-0.1,0-0.1,0-0.2C8.4,0.9,7.3-0.1,6,0   C5.9,0,5.9,0,5.8,0C4.5,0,3.5,1,3.5,2.3L3.6,3H3.5c0,0-0.1,0-0.1,0C3.1,3.1,2.9,3.3,3,3.6L3.2,4.2z"></path> </g> </symbol><symbol viewBox="0 0 1427 383.4" id="netflix_logo"><defs><style>.cls-1{fill:#e50914;}</style></defs><title>Netflix_Logo</title><g id="netflix_logo_Layer_2" data-name="Layer 2"><g id="netflix_logo_Netflix_Logo_RGB"><g id="netflix_logo_Netflix_Logo_RGB-2" data-name="Netflix_Logo_RGB"><path class="cls-1" d="M1102.06,347.88q30.09,2.3,60.09,5V0h-60.09ZM135.37,217,57.11,0H0V383.4q30-4.27,60.09-8.18V166.74l69.59,199.91q32.83-3.81,65.78-7.2V0H135.37ZM253.25,353.86q83.08-7.55,166.92-12.4V282.25q-53.57,3.1-106.83,7.3V199.9c23.3-.23,54-.94,81.15-.61V140.09c-21.71-.05-56.61.3-81.15.62V59.78H420.17V0H253.25ZM458.69,59.77h62.89V336.65q30-1.13,60.09-1.9v-275h62.89V0H458.69Zm224.4,273.36h60.09V196.42h81.46V137.21H743.18V59.78H850.84V0H683.09ZM1427,0h-66l-43.51,100.85L1278.39,0h-65l69.86,180.21L1207,357q31.65,3.09,63.16,6.57l44.36-102.79,43.93,113.31q34.32,4.41,68.49,9.26l.09,0-78.28-201.89ZM949.45,0H889.36V336.07q81.92,2.82,163.15,8.25V285.11q-51.39-3.43-103.06-5.83Z"></path></g></g></g></symbol></defs></svg>
+    
+    <div id="root" class="root"><div class="site en site-loaded"><header class="site__header"><span><div class="site__header__bar"><a class="site__header__nav__link sub-nav" href="https://brand.netflix.com/en/account-request/"><span class="site__header__nav__link__label-1">ACCOUNT REQUEST</span><span class="site__header__nav__link__label-2"></span></a><button class="sub-nav login">LOGIN<svg role="img" class="icon login" width="11" height="18"><title>Icon</title><use xlink:href="#login"></use></svg></button><div class="sub-nav"></div></div><nav class="site__header__nav"><a class="site__header__nav__home-page-link" href="https://brand.netflix.com/en/" style="width: 20vw;"><img width="16" class="symbol" src="./Netflix_files/netflix_symbol.png" alt=""><div class="site__header__nav__home-page-link__label">BRAND<br>SITE</div></a><a class="site__header__nav__link" href="https://brand.netflix.com/en/assets/" style="width: 20vw;"><span class="site__header__nav__link__label-1">Explore</span><span class="site__header__nav__link__label-2">BRAND ASSETS</span></a></nav><span><div class="menu menu-mobile "><div class="toggle-button"><div class="line center"></div></div><div class="panel"><ul class="main-links"><li class=""><a href="https://brand.netflix.com/en/">Netflix Brand Site</a></li><li class=""><a href="https://brand.netflix.com/en/assets/">Brand Assets</a></li></ul><div class="line"></div><ul class="minor-links"><li class="sub-link"><a href="https://brand.netflix.com/en/account-request/">Account Request</a></li></ul></div></div></span></span></header><main class="stack "><div class="page "><div class="guide-template template animate-in"><div class="guide-template__header padded-container"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_640w.png?v=31 2x, https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_480w.png?v=41 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1024w.png?v=37 2x, https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_640w.png?v=31 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1440w.png?v=11 2x, https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_640w.png?v=31 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1920w.png?v=42 2x, https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1024w.png?v=37 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1920w.png?v=42 2x, https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1440w.png?v=11 1x"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1920w.png?v=42 2x, https://assets.brand.microsites.netflix.io/assets/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1440w.png?v=11 1x"><img alt="" src="./Netflix_files/0e2939ca-087d-11e8-8d40-066b49664af6_hero_1024w.png" style="transform: translate(0%, -15.3409%) matrix(1, 0, 0, 1, 0, 0);"></picture><h1 class="guide-template__header__title">Brand Assets</h1><span class="guide-template__header__description">The elements of our brand's visual identity</span></div><div class="guide-template__content padded-container"><div class="guide-nav is-landing"><nav class="side-menu"><strong>Brand Assets</strong><div class="menu-item "><a href="https://brand.netflix.com/en/assets/brand-logo/">Logo</a></div><div class="menu-item "><a href="https://brand.netflix.com/en/assets/brand-symbol/">Symbol</a></div></nav></div><div class="guide-template__content__area"><article class="article guide-template__content__area__article"><div class="modules"><div class="module separator" data-size="medium"><h2 class="separator__title"><span>Logo</span></h2><span class="separator__subtitle"><span>OUR BRAND SIGNATURE</span></span><a href="https://vandam.netflix.com/shares/ce08c8b4ac3f6aa28c7d8f954aabcd69" target="_blank" rel="noopener noreferrer" class="button-default button-download"><span>DOWNLOAD LOGO</span><div class="icon-wrapper center-vert"><svg role="img" class="icon dl_arrow download-icon1" width="18" height="20"><title>Icon</title><use xlink:href="#dl_arrow"></use></svg><svg role="img" class="icon dl_ui_bracket download-icon2" width="29" height="9"><title>Icon</title><use xlink:href="#dl_ui_bracket"></use></svg></div></a></div><div class="module new-line" data-size="large"></div><div class="module title" data-size="large"><h3 class="title__copy">With the arc of a vintage CinemaScope and the signature Netflix red, our wordmark is iconic.</h3></div><figure class="module image" data-size="large"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_800w.png?v=51 2x, https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_640w.png?v=58 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1024w.png?v=34 2x, https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_640w.png?v=58 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=30 2x, https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_800w.png?v=51 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=30 2x, https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1024w.png?v=34 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1920w.png?v=27 2x, https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=30 1x"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1920w.png?v=27 2x, https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1024w.png?v=34 1x"><img alt="" class="image__content" src="./Netflix_files/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png"></picture></figure><div class="module blank" data-size="large"></div><div class="module blank" data-size="large"></div><div class="module text preview" data-size="large"><h3>COLOR</h3><p class="text__copy"><p>Our primary logo is Netflix Red on a black background. This is to create a premium cinematic feel as we continue to set the industry standard for original content.<br></p></p></div><figure class="module image" data-size="large"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_800w.png?v=26 2x, https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_640w.png?v=48 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1024w.png?v=58 2x, https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_640w.png?v=48 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1440w.png?v=34 2x, https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_800w.png?v=26 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1440w.png?v=34 2x, https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1024w.png?v=58 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1920w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1440w.png?v=34 1x"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1920w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/ac7af654-8199-11e9-bf79-066b49664af6_cm_1024w.png?v=58 1x"><img alt="" class="image__content" src="./Netflix_files/ac7af654-8199-11e9-bf79-066b49664af6_cm_1440w.png"></picture></figure><div class="module blank" data-size="large"></div><div class="module blank" data-size="large"></div><div class="module text preview" data-size="large"><h3>CLEARING SPACE</h3><p class="text__copy"><p>The minimum clear space of the logo is the width of the T in Netflix.<br></p></p></div><figure class="module image" data-size="medium"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_800w.png?v=11 2x, https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=59 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_1024w.png?v=47 2x, https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=59 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_1440w.png?v=8 2x, https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_800w.png?v=11 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=59 2x, https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_320w.png?v=58 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_1024w.png?v=47 2x, https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=59 1x"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_1024w.png?v=47 2x, https://assets.brand.microsites.netflix.io/assets/91281002-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=59 1x"><img alt="" class="image__content" src="./Netflix_files/91281002-c4ea-11e7-8d40-066b49664af6_cm_1024w.png"></picture></figure><figure class="module image" data-size="medium"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_800w.png?v=59 2x, https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_640w.png?v=14 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_1024w.png?v=22 2x, https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_640w.png?v=14 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_1440w.png?v=16 2x, https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_800w.png?v=59 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_640w.png?v=14 2x, https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_320w.png?v=22 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_1024w.png?v=22 2x, https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_640w.png?v=14 1x"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_1024w.png?v=22 2x, https://assets.brand.microsites.netflix.io/assets/884000e8-b375-11e7-9274-06c476b5c346_cm_640w.png?v=14 1x"><img alt="" class="image__content" src="./Netflix_files/884000e8-b375-11e7-9274-06c476b5c346_cm_1024w.png"></picture></figure><div class="module blank" data-size="large"></div><div class="module blank" data-size="large"></div><div class="module text preview" data-size="large"><h3>LOGO ON COLOR</h3><p class="text__copy"><p>In certain situations, the logo can also be used on a white or contextually colored background, as long as there is a 3:1 contrast ratio. Anything less may compromise visibility and is not recommended. Color contrasts can be checked <a rel="nofollow" target="_blank" href="https://webaim.org/resources/contrastchecker/">here</a>.<br></p></p></div><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_640w.png?v=23 2x, https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_320w.png?v=40 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_640w.png?v=23 2x, https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_320w.png?v=40 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_800w.png?v=22 2x, https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_640w.png?v=23 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_640w.png?v=23 2x, https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_320w.png?v=40 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_320w.png?v=40"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/5a5c367c-8198-11e9-bf79-066b49664af6_cm_320w.png?v=40"><img alt="" class="image__content" src="./Netflix_files/5a5c367c-8198-11e9-bf79-066b49664af6_cm_800w.png"></picture></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_640w.png?v=32 2x, https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_320w.png?v=42 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_640w.png?v=32 2x, https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_320w.png?v=42 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_800w.png?v=21 2x, https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_640w.png?v=32 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_640w.png?v=32 2x, https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_320w.png?v=42 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_320w.png?v=42"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/60053e7a-8198-11e9-bf79-066b49664af6_cm_320w.png?v=42"><img alt="" class="image__content" src="./Netflix_files/60053e7a-8198-11e9-bf79-066b49664af6_cm_800w.png"></picture></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_640w.png?v=40 2x, https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_320w.png?v=44 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_640w.png?v=40 2x, https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_320w.png?v=44 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_800w.png?v=42 2x, https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_640w.png?v=40 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_640w.png?v=40 2x, https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_320w.png?v=44 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_320w.png?v=44"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/677f8502-8198-11e9-bf79-066b49664af6_cm_320w.png?v=44"><img alt="" class="image__content" src="./Netflix_files/677f8502-8198-11e9-bf79-066b49664af6_cm_800w.png"></picture></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_640w.png?v=13 2x, https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_320w.png?v=10 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_640w.png?v=13 2x, https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_320w.png?v=10 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_800w.png?v=58 2x, https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_640w.png?v=13 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_640w.png?v=13 2x, https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_320w.png?v=10 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_320w.png?v=10"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/6d94315e-8198-11e9-bf79-066b49664af6_cm_320w.png?v=10"><img alt="" class="image__content" src="./Netflix_files/6d94315e-8198-11e9-bf79-066b49664af6_cm_800w.png"></picture></figure><div class="module blank" data-size="large"></div><div class="module blank" data-size="large"></div><div class="module text preview" data-size="large"><h3>VIDEO WATERMARK</h3><p class="text__copy"><p>On very few occasions, the logo can appear in white. One such occasion is for the video watermark.<br></p></p></div><figure class="module image" data-size="medium"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_800w.jpg?v=58 2x, https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_640w.jpg?v=56 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16 2x, https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_640w.jpg?v=56 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1440w.jpg?v=45 2x, https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_800w.jpg?v=58 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_640w.jpg?v=56 2x, https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_320w.jpg?v=50 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16 2x, https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_640w.jpg?v=56 1x"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16 2x, https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_640w.jpg?v=56 1x"><img alt="" class="image__content" src="./Netflix_files/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg"></picture></figure><div class="module blank" data-size="large"></div><div class="module blank" data-size="large"></div><div class="module title" data-size="large"><h3 class="title__copy">AVOID</h3></div><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_640w.png?v=46 2x, https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_320w.png?v=52 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_640w.png?v=46 2x, https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_320w.png?v=52 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_800w.png?v=14 2x, https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_640w.png?v=46 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_640w.png?v=46 2x, https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_320w.png?v=52 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_320w.png?v=52"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/fbd0c908-b388-11e7-9274-06c476b5c346_cm_320w.png?v=52"><img alt="" class="image__content" src="./Netflix_files/fbd0c908-b388-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid using a white logo, except for a video watermark. For all other cases, please contact brand@netflix.com.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_640w.png?v=55 2x, https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_320w.png?v=12 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_640w.png?v=55 2x, https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_320w.png?v=12 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_800w.png?v=43 2x, https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_640w.png?v=55 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_640w.png?v=55 2x, https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_320w.png?v=12 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_320w.png?v=12"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/5044bb82-8198-11e9-bf79-066b49664af6_cm_320w.png?v=12"><img alt="" class="image__content" src="./Netflix_files/5044bb82-8198-11e9-bf79-066b49664af6_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid using a white logo on a contextually colored background.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_640w.png?v=9 2x, https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_320w.png?v=40 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_640w.png?v=9 2x, https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_320w.png?v=40 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_800w.png?v=14 2x, https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_640w.png?v=9 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_640w.png?v=9 2x, https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_320w.png?v=40 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_320w.png?v=40"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/f943a276-c4e7-11e7-8d40-066b49664af6_cm_320w.png?v=40"><img alt="" class="image__content" src="./Netflix_files/f943a276-c4e7-11e7-8d40-066b49664af6_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid using the logo in a sentence.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=5 2x, https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_320w.png?v=7 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=5 2x, https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_320w.png?v=7 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_800w.png?v=41 2x, https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=5 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_640w.png?v=5 2x, https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_320w.png?v=7 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_320w.png?v=7"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_320w.png?v=7"><img alt="" class="image__content" src="./Netflix_files/df87ee0c-c4ea-11e7-8d40-066b49664af6_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid adding effects like shadows, dimensions, and gradients to the logo.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=61 2x, https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=4 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=61 2x, https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=4 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_800w.png?v=50 2x, https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=61 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=61 2x, https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=4 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=4"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=4"><img alt="" class="image__content" src="./Netflix_files/1561c76e-b389-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid stretching or compressing the logo.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_640w.png?v=15 2x, https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_320w.png?v=19 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_640w.png?v=15 2x, https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_320w.png?v=19 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_800w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_640w.png?v=15 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_640w.png?v=15 2x, https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_320w.png?v=19 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_320w.png?v=19"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_320w.png?v=19"><img alt="" class="image__content" src="./Netflix_files/1ed15bca-b389-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid placing the logo in a shape or container.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_640w.png?v=26 2x, https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_320w.png?v=57 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_640w.png?v=26 2x, https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_320w.png?v=57 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_800w.png?v=46 2x, https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_640w.png?v=26 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_640w.png?v=26 2x, https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_320w.png?v=57 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_320w.png?v=57"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/b506cad0-b389-11e7-9274-06c476b5c346_cm_320w.png?v=57"><img alt="" class="image__content" src="./Netflix_files/b506cad0-b389-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid rotating the logo.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_640w.png?v=56 2x, https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_320w.png?v=26 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_640w.png?v=56 2x, https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_320w.png?v=26 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_800w.png?v=29 2x, https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_640w.png?v=56 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_640w.png?v=56 2x, https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_320w.png?v=26 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_320w.png?v=26"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/4e0336c6-219c-11e8-8d40-066b49664af6_cm_320w.png?v=26"><img alt="" class="image__content" src="./Netflix_files/4e0336c6-219c-11e8-8d40-066b49664af6_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid using the logo on busy backgrounds.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_640w.png?v=4 2x, https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_320w.png?v=13 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_640w.png?v=4 2x, https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_320w.png?v=13 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_800w.png?v=49 2x, https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_640w.png?v=4 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_640w.png?v=4 2x, https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_320w.png?v=13 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_320w.png?v=13"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_320w.png?v=13"><img alt="" class="image__content" src="./Netflix_files/b2048e14-9c47-11e9-ac0c-066b49664af6_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid using an old version of the logo</figcaption></figure><div class="module blank" data-size="small"></div><div class="module blank" data-size="medium"></div><div class="module blank" data-size="large"></div><div class="module blank" data-size="large"></div><div class="module title" data-size="large"><h3 class="title__copy">CONSIDERATIONS</h3></div><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=38 2x, https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=29 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=38 2x, https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=29 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_800w.png?v=29 2x, https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=38 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=38 2x, https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=29 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=29"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/d57d555e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=29"><img alt="" class="image__content" src="./Netflix_files/d57d555e-b389-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid doormats, rugs, or anywhere else people walk. Please protect our logo from getting dirty.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=41 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=41 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_800w.png?v=38 2x, https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=41 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=41"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/e000c07e-b389-11e7-9274-06c476b5c346_cm_320w.png?v=41"><img alt="" class="image__content" src="./Netflix_files/e000c07e-b389-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid scratch-offs, dart boards, and other surfaces that are sure to be damaged. We love our logo too much to let it come to harm.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_800w.png?v=12 2x, https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_640w.png?v=60 2x, https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/e8cb9724-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22"><img alt="" class="image__content" src="./Netflix_files/e8cb9724-b389-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid disposable items, such as plastic cups and paper napkins. Our logo was not designed to be crumpled, smeared with food, or tossed into the trash.</figcaption></figure><figure class="module image" data-size="small"><picture class="responsive-img"><source media="(max-width:480px)" srcset="https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_640w.png?v=47 2x, https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22 1x"><source media="(max-width:640px)" srcset="https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_640w.png?v=47 2x, https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22 1x"><source media="(max-width:768px)" srcset="https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_800w.png?v=30 2x, https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_640w.png?v=47 1x"><source media="(max-width:1024px)" srcset="https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_640w.png?v=47 2x, https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22 1x"><source media="(max-width:1280px)" srcset="https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22"><source media="" srcset="https://assets.brand.microsites.netflix.io/assets/f1594800-b389-11e7-9274-06c476b5c346_cm_320w.png?v=22"><img alt="" class="image__content" src="./Netflix_files/f1594800-b389-11e7-9274-06c476b5c346_cm_800w.png"></picture><div class="do-dont-icon"><svg role="img" class="icon dont center" width="29" height="24"><title>Icon</title><use xlink:href="#dont_mark"></use></svg></div><figcaption class="image__caption">Avoid food. We don't want our logo to be sliced, bitten, or digested.</figcaption></figure></div></article></div></div><span></span><aside class="bottom-nav "><div class="padded-container grid-container"></div></aside></div><footer class="site-footer"><div class="bg"></div><div class="content padded-container"><div class="wrapper"><div class="legal"><svg role="img" class="icon" width="100" height="30"><title>Icon</title><use xlink:href="#netflix_logo"></use></svg><p>All uses of the Netflix materials are subject to the <a href="https://brand.netflix.com/en/terms" target="_blank" rel="noopener">Terms and Conditions</a>.</p></div><div class="language-wrapper"></div></div></div></footer><span></span></div></main></div></div>
+   
+    <noscript>
+      <style>
+        #splash-container { display: none; }
+      </style>
+      <h1 style="color: black;">Please enable Javascript to view the site.</h1>
+    </noscript>
+
+    <!-- Redirect to /en/ if / -->
+    <script type="text/javascript" async="" src="./Netflix_files/analytics.js.download"></script><script>
+      if (window.location.pathname === '/') {
+        window.location = '/en/';
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./Netflix_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-112186212-1');
+    </script>
+    <script>
+      /*
+        Install service worker
+      */
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/static/sw.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
+    <script async="" src="./Netflix_files/pa-5c032a449a3f8300160000c8.js.download"></script>
+	<script type="text/javascript" src="./Netflix_files/manifest.7aa6146093a23b743b08.js.download"></script><script type="text/javascript" src="./Netflix_files/vendor.7aa6146093a23b743b08.js.download"></script><script type="text/javascript" src="./Netflix_files/main.7aa6146093a23b743b08.js.download"></script>
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="./Netflix_files/anchor.html" width="256" height="60" role="presentation" name="a-rbprksv2bi26" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Netflix_files/saved_resource.html"></iframe></div></body></html>
